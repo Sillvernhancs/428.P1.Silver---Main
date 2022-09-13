@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Steve
+* source:	https://sketchfab.com/3d-models/minecraft-steve-df57f3d886e3453d9f6c1b42e3909cd8
+* author:	Minecraft (https://sketchfab.com/minefur)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Steve" (https://sketchfab.com/3d-models/minecraft-steve-df57f3d886e3453d9f6c1b42e3909cd8) by Minecraft (https://sketchfab.com/minefur) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

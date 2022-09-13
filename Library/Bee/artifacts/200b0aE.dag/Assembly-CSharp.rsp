@@ -357,6 +357,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VuforiaEditorScripts.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VuforiaScripts.ref.dll"
+"Assets/egyptSunScript.cs"
+"Assets/mcSunScript.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserManager.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserWindow.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabModelWindow.cs"
@@ -368,8 +370,10 @@
 "Assets/Sketchfab For Unity/Scripts/SketchfabLogger.cs"
 "Assets/Sketchfab For Unity/Scripts/SketchfabPlugin.cs"
 "Assets/Sketchfab For Unity/Scripts/SketchfabUI.cs"
-"Assets/TimeUpdater.cs"
-"Assets/WeatherAPIScript.cs"
+"Assets/TimeUpdater1.cs"
+"Assets/TimeUpdater2.cs"
+"Assets/WeatherAPIScript1.cs"
+"Assets/WeatherAPIscript2.cs"
 -langversion:9.0
 
 /deterministic
