@@ -1,6 +1,6 @@
 Model Information:
 * title:	Seated statue of Maya and Meryt
-* source:	https://sketchfab.com/3d-models/seated-statue-of-maya-and-meryt-f2d7a014141841d99f16ccb4cc404326
+* source:	 
 * author:	The National Museum of Antiquities (https://sketchfab.com/rmo_leiden)
 
 Model License:
