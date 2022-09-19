@@ -35,10 +35,9 @@ public class TimeUpdater2 : MonoBehaviour
             }
             else
             {
-                 // print out the weather data to make sure it makes sense
-                int startIndex = webRequest.downloadHandler.text.IndexOf("datetime") + 26;
-                // Debug.Log(startIndex);
-                // Debug.Log(endIndex);
+                // print out the weather data to make sure it makes sense
+                int startIndex = webRequest.downloadHandler.text.IndexOf("datetime") + 22;
+                // Debug.Log(webRequest.downloadHandler.text.Substring(webRequest.downloadHandler.text.IndexOf("datetime")+22), 2);
                 string hour = (webRequest.downloadHandler.text.Substring(startIndex, 3).Replace(":", string.Empty));
                 string mins = (webRequest.downloadHandler.text.Substring(startIndex + 2, 3).Replace(":", string.Empty));
                 // Debug.Log("\n" + hour + ":" + mins);

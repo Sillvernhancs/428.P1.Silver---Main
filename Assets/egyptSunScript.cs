@@ -12,7 +12,7 @@ public class egyptSunScript : MonoBehaviour
     void Update()
     {
         if (Vector3.Dot(cube.transform.up, Vector3.down) > 0) {
-            Debug.Log("upside down");
+            // Debug.Log("upside down");
             // sun.GetComponent<Light>().enabled = false;
             if (state == 0) {
                 state = 1;
@@ -21,7 +21,7 @@ public class egyptSunScript : MonoBehaviour
                 state = 3;
             }
         } else {
-            Debug.Log("right side up");
+            // Debug.Log("right side up");
             // sun.GetComponent<Light>().enabled = true;
             if (state == 1) {
                 state = 2;
@@ -29,7 +29,7 @@ public class egyptSunScript : MonoBehaviour
                 state = 0;
             }
         }
-        Debug.Log(state);
+        // Debug.Log(state);
         if (state == 0) { 
             sun.GetComponent<Light>().enabled = true;
         } else if (state == 2) {
