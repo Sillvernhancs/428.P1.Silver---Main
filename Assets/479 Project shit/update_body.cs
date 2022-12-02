@@ -19,25 +19,44 @@ public class update_body: MonoBehaviour
     
     public Material good;
     public Material bad;
+
+    private bool rotating = true;
+    private Vector3 destination;
     
     void Update()
     {
         if (p!= null  && (p.accelerometer_x > 25 || p.accelerometer_x < -25)) {
-            monitor.GetComponent<Renderer>().material = good;
             monitor.GetComponent<Renderer>().material = bad;
+        } else if (p.accelerometer_y> 25 || p.accelerometer_y < -25) {
+            monitor.GetComponent<Renderer>().material = bad;
+        } else if (p.flex > 25 || p.flex < -30) {
+            monitor.GetComponent<Renderer>().material = bad;
+        } else {
+            monitor.GetComponent<Renderer>().material = good;
         }
+        // smoothly rotates parts
+        if (lower_spine.transform.localEulerAngles == destination) {
+            rotating = false;
+        } else {
+            rotating = true;
+        }
+
+        // if(rotating) {
+        //     lower_spine.transform.Rotate(destination * Time.deltaTime);
+        // }
+        // if (Vector3.Distance(lower_spine.transform.eulerAngles, destination) > 0.01f) {
+        //     lower_spine.transform.eulerAngles = Vector3.Lerp(lower_spine.transform.rotation.eulerAngles, destination, Time.deltaTime);
+        // } else {
+        //     transform.eulerAngles = destination;
+        //     rotating = false;
+        // }
     }
 
     void Start()
     {
     // wait a couple seconds to start and then refresh every 900 seconds
-       InvokeRepeating("GetDataFromWeb", 1f, 0.5f);
+       InvokeRepeating("GetDataFromWeb", 1f, 0.05f);
    }
-
-    // public void SetBlendedEulerAngles(Vector3 angles)
-    // {
-    //     neckTarget = Quaternion.Euler(angles);
-    // }
 
 
    void process(string text) {
@@ -53,9 +72,12 @@ public class update_body: MonoBehaviour
         // print(p.accelerometer_x + ":" + p.accelerometer_y + ":" + p.accelerometer_z);
 
         //spine3
-        lower_spine.transform.localEulerAngles = new Vector3(p.accelerometer_x, 0, p.accelerometer_y);
 
-        lower_spine.transform.localEulerAngles = new Vector3(p.accelerometer_x, 0, p.accelerometer_y);
+        lower_spine.transform.localEulerAngles = new Vector3(p.accelerometer_x*-1, 0, p.accelerometer_y);
+        // destination = new Vector3(p.accelerometer_x * -1, 0, p.accelerometer_y);
+        // lower_spine.transform.rotation = Quaternion.Slerp(lower_spine.transform.rotation, Quaternion.LookRotation(destination), 4f * Time.deltaTime);
+        // lower_spine.transform.Rotate(destination * Time.deltaTime);
+
         // upper_spine.transform.localEulerAngles = new Vector3(p.accelerometer_x/2, p.accelerometer_y/2, p.accelerometer_z/2);
         // lower_spine.transform.eulerAngles.x = p.flex;
         
