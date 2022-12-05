@@ -7,6 +7,9 @@ ScriptsOnlyBuild:
     - WeatherAPIscript2
     - egyptSunScript
     - mcSunScript
+    - update_body
+    Unity.PlasticSCM.Editor.dll:
+    - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -20,6 +23,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     Vuforia.Unity.Engine.dll:
+    - Vuforia.ImageTargetBehaviour
+    - Vuforia.ImageTargetPreview
     - Vuforia.MultiTargetBehaviour
     - Vuforia.MultiTargetPreview
     - Vuforia.VuforiaBehaviour
@@ -28,6 +33,8 @@ ScriptsOnlyBuild:
     - DefaultInitializationErrorHandler
     - DefaultObserverEventHandler
   serializedClasses:
+    Assembly-CSharp:
+    - dude
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -120,6 +127,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2798}
     - Class: 114
+      Script: {instanceID: 2878}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
       Script: {instanceID: 2904}
     - Class: 114
       Script: {instanceID: 2954}
@@ -144,9 +155,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6550}
     - Class: 114
-      Script: {instanceID: 8646}
+      Script: {instanceID: 6950}
     - Class: 114
-      Script: {instanceID: 9026}
+      Script: {instanceID: 8650}
+    - Class: 114
+      Script: {instanceID: 9030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -162,6 +175,10 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -1812,10 +1829,22 @@ ScriptsOnlyBuild:
     className: SketchfabModelWindow
   - hash:
       serializedVersion: 2
+      Hash: 71d1a7bafc04ef72fdeb4fabc2722d62
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: update_body
+  - hash:
+      serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateStates
   - hash:
       serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
@@ -2737,4 +2766,4 @@ ScriptsOnlyBuild:
   platform: 9
   scenePathNames:
   - Assets/Scenes/RoswellScene.unity
-  playerPath: /Users/silver/Documents/Unity Build/Project 1 build
+  playerPath: /Users/silver/Desktop/untitled folder

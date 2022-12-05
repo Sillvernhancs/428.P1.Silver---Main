@@ -20,6 +20,9 @@ public class update_body: MonoBehaviour
     public Material good;
     public Material bad;
 
+    public AudioSource badSound;
+    public AudioSource goodSound;
+
     private bool rotating = true;
     private Vector3 destination;
     
@@ -27,12 +30,16 @@ public class update_body: MonoBehaviour
     {
         if (p!= null  && (p.accelerometer_x > 25 || p.accelerometer_x < -25)) {
             monitor.GetComponent<Renderer>().material = bad;
+
         } else if (p.accelerometer_y> 25 || p.accelerometer_y < -25) {
             monitor.GetComponent<Renderer>().material = bad;
+
         } else if (p.flex > 25 || p.flex < -30) {
             monitor.GetComponent<Renderer>().material = bad;
+
         } else {
             monitor.GetComponent<Renderer>().material = good;
+
         }
         // smoothly rotates parts
         if (lower_spine.transform.localEulerAngles == destination) {
