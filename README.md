@@ -4,6 +4,5 @@ Built from Arduino Fire Beetle with gyro, accelerometer, and flex sensor. Proces
 
 Integrate the Vuforia AR engine into Unity to map model to an target image
 
-![image](https://user-images.githubusercontent.com/76749421/205946412-e277b969-25b9-4e1b-89ef-dbcebc77a9c9.png)
-
+## Video Demo: 
 [![video](https://user-images.githubusercontent.com/76749421/205946412-e277b969-25b9-4e1b-89ef-dbcebc77a9c9.png)](https://www.youtube.com/watch?v=arTgPvFNZYg&ab_channel=SilverVo)
